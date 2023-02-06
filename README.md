@@ -1,3 +1,7 @@
+pySerial 
+<!--  -->
+https://pyserial.readthedocs.io/en/latest/pyserial.html#overview
+<!--  -->
 第一步连接
 <!--  -->
     demo1.py 实现
