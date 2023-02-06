@@ -53,6 +53,9 @@ def OpenHand(hand):
         hand[i] = hand[i][2:]
         hand[i] = hand[i].upper()
         i+=1 
+    if int(hand[0], 16) < 10:
+        hand[0] = "0"+hand[0]
+    print(hand[0])
     hand = hand[0]+ " " + hand[1]+ " " +hand[2] + " " + "00"
     str ="09 10 03 EB 00 02 04 "
     hand = str + hand
@@ -74,6 +77,9 @@ def  RevoleHand(revolve):
         revolve[i] = revolve[i][2:]
         revolve[i] = revolve[i].upper()
         i+=1 
+    if int(hand[0], 16) < 10:
+        hand[0] = "0"+hand[0]
+    print(hand[0])
     revolve = revolve[0]+ " " + revolve[1]+ " " +revolve[2] + " " + "00"
     str ="09 10 03 ED 00 02 04 "
     revolve = str + revolve
@@ -95,6 +101,9 @@ def LeftHand(left):
         left[i] = left[i][2:]
         left[i] = left[i].upper()
         i+=1 
+    if int(hand[0], 16) < 10:
+        hand[0] = "0"+hand[0]
+    print(hand[0])
     left = left[0]+ " " + left[1]+ " " +left[2] + " " + "00"
     str ="09 10 03 EF 00 02 04 "
     left = str + left
@@ -115,7 +124,10 @@ def RightHand(right):
         right[i] = hex(right[i]) #
         right[i] = right[i][2:]
         right[i] = right[i].upper()
-        i+=1 
+        i+=1
+    if int(hand[0], 16) < 10:
+        hand[0] = "0"+hand[0]
+    print(hand[0])
     right = right[0]+ " " + right[1]+ " " +right[2] + " " + "00"
     str ="09 10 03 F3 00 02 04 "
     right = str + right
@@ -136,7 +148,10 @@ def CenterHand(center):
         center[i] = hex(center[i]) #
         center[i] = center[i][2:]
         center[i] = center[i].upper()
-        i+=1 
+        i+=1
+    if int(hand[0], 16) < 10:
+        hand[0] = "0"+hand[0]
+    print(hand[0]) 
     center = center[0]+ " " + center[1]+ " " +center[2] + " " + "00"
     str ="09 10 03 F1 00 02 04 "
     center = str + center
